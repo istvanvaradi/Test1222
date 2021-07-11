@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta  name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">   
+     <link rel="stylesheet" href="styles.css">
+    <title>JS Project</title>
+</head> 
+<body>
+    <nav id="navbar">
+        <header class="text-responsive" id="header">JS personal knowledge base</header>
+        <ul id="test" class="list-group">
+          <li> <a class="nav-link" href=""></a> </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+      
+        <section class="main-section" id="About_Javascript">
+          <header id="header">About Javascript</header>
+          <p>
+            JavaScript is a cross-platform, object-oriented scripting language. It
+            is a small and lightweight language. Inside a host environment (for
+            example, a web browser), JavaScript can be connected to the objects of
+            its environment to provide programmatic control over them.
+          </p>
+      
+          <p>
+            JavaScript contains a standard library of objects, such as Array, Date,
+            and Math, and a core set of language elements such as operators, control
+            structures, and statements. Core JavaScript can be extended for a
+            variety of purposes by supplementing it with additional objects; for
+            example:
+          </p>
+          <ul class=main-section>
+            <li>
+              Client-side JavaScript extends the core language by supplying objects
+              to control a browser and its Document Object Model (DOM). For example,
+              client-side extensions allow an application to place elements on an
+              HTML form and respond to user events such as mouse clicks, form input,
+              and page navigation.
+            </li>
+            <li>
+              Server-side JavaScript extends the core language by supplying objects
+              relevant to running JavaScript on a server. For example, server-side
+              extensions allow an application to communicate with a database,
+              provide continuity of information from one invocation to another of
+              the application, or perform file manipulations on a server.
+            </li>
+          </ul>
+      
+        </section>
+        <section class="main-section" id="I_assume_You_already_know">
+          <header id="header">
+            I assume You already know
+          </header>
+          <p> This is my personal guide, made of things that I found interesting, or easy to forget abuot for example important concepts <br> of functional programming.
+            <p />
+        </section>
+        <section class="main-section" id="Array.pop()">
+          <header id="header">
+            Array.pop() </header>
+          <p> I haven't used it in my programming courses but it is interesting.
+          </p>
+          <code>
+            var threeArr = [1, 4, 6]; <br>
+            var oneDown = threeArr.pop(); <br>
+            console.log(oneDown);
+            console.log(threeArr);
+          </code>
+          <p>Actually the first log is the last element of the array, the second log is the array minus the popped out one.</p>
+          <p>Shift() does the same thing but opposit deirectection it removes the first element</p>
+        </section>
+        <section class="main-section" id="Global_scope_and_functions">
+          <header id="header">
+            Global scope,functions </header>
+          <p> Easy to miss, or forget so worth to mention.
+          </p >
+      
+          <p>Global Scope and Functions
+            In JavaScript, scope refers to the visibility of variables. Variables which are defined outside of a function block have Global scope. This means, they can be seen everywhere in your JavaScript code.
+      
+            Variables which are declared without the var keyword are automatically created in the global scope. This can create unintended consequences elsewhere in your code or when running a function again. You should always declare your variables with var.</p>
+        </section>
+      
+        <section class="main-section" id="Unshift()">
+          <header id="header">
+            Unshift()
+          </header>
+          <p>
+            Not only can you shift elements off of the beginning of an array, you can also unshift elements to the beginning of an array i.e. add elements in front of the array.
+      
+            .unshift() works exactly like .push(), but instead of adding the element at the end of the array, unshift() adds the element at the beginning of the array.
+      
+            Example:
+            <code>
+              var ourArray = ["Stimpson", "J", "cat"];
+              ourArray.shift();
+              ourArray.unshift("Happy");
+            </code>
+          </p>
+        </section>
+      
+        <section class="main-section" id="Passing_values">
+          <header id="header">
+            Passing Values to functions
+          </header>
+          <p>
+            Parameters are variables that act as placeholders for the values that are to be input to a function when it is called. When a function is defined, it is typically defined along with one or more parameters. The actual values that are input (or "passed") into a function when it is called are known as arguments.
+      
+            Here is a function with two parameters, param1 and param2:
+            <code>
+              function testFun(param1, param2) {
+              console.log(param1, param2);
+              }
+            </code>
+            Then we can call testFun like this: testFun("Hello", "World");. We have passed two string arguments, Hello and World. Inside the function, param1 will equal the string Hello and param2 will equal the string World. Note that you could call testFun again with different arguments and the parameters would take on the value of the new arguments.
+      
+          </p>
+        </section>
+      
+      </main>  
+      <script src="index.js"></script>  
+</body>
+
+</html>
